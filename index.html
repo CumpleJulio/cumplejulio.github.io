@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Cumpleaños 🎉</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div id="start-screen">
+    <h1>🎉 ¿Cuánto conocés al cumpleañero/a? 🎁</h1>
+    <p>Respondé estas divertidas preguntas y probá tu conocimiento.</p>
+    <button id="start-btn">¡Empecemos con las preguntas! 🥳</button>
+  </div>
+
+  <div class="quiz-container hidden">
+    <h1 id="quiz-title">🎈 Preguntas de Cumpleaños 🎂</h1>
+
+    <div id="quiz">
+      <div class="question">
+        <h1>1. ¿Qué frase célebre dijo un jueves?</h1>
+        <br>
+        <button onclick="checkAnswer(this, true)">Yo con un pedacito de queso me arreglo</button>
+        <button onclick="checkAnswer(this, false)">Te estaba esperando para cenar Julita!</button>
+        <button onclick="checkAnswer(this, false)">Los 3 chicos no tienen hambre</button>
+      </div>
+
+      <div class="question">
+        <h1>2. ¿Qué especialidad tiene?</h1>
+        <br>
+        <button onclick="checkAnswer(this, false)">Tocar el acordeón a piano</button>
+        <button onclick="checkAnswer(this, false)">Coser en la máquina Singer de la madre</button>
+        <button onclick="checkAnswer(this, true)">Exceso de meticulosidad</button>
+      </div>
+
+      <div class="question">
+        <h1>3. ¿Por qué es devoto de Santa Rita?</h1>
+        <br>
+        <button onclick="checkAnswer(this, true)">Porque es la Santa de lo imposible</button>
+        <button onclick="checkAnswer(this, false)">Por el imperial de Cachito</button>
+        <button onclick="checkAnswer(this, false)">Porque la conoció de chiquito</button>
+      </div>
+
+      <div class="question">
+        <h1>4. ¿A cuántas cerraduras estuvo del inodoro?</h1>
+        <br>
+        <button onclick="checkAnswer(this, false)">A una</button>
+        <button onclick="checkAnswer(this, false)">A dos</button>
+        <button onclick="checkAnswer(this, true)">A tres de llegar segundo</button>
+      </div>
+
+      <div class="question">
+        <h1>5. ¿Cómo le gusta pasar Año Nuevo?</h1>
+        <br>
+        <button onclick="checkAnswer(this, false)">En familia y con amigos</button>
+        <button onclick="checkAnswer(this, true)">En compañía de algún virus</button>
+        <button onclick="checkAnswer(this, false)">De camping</button>
+      </div>
+
+      <div class="question">
+        <h1>6. ¿A quién le demuestra su inconmensurable amor?</h1>
+        <br>
+        <button onclick="checkAnswer(this, true)">Al Toto</button>
+        <button onclick="checkAnswer(this, false)">A su señora esposa</button>
+        <button onclick="checkAnswer(this, false)">A los hijos y los nietos</button>
+      </div>
+
+      <div class="question">
+        <h1>7. ¿Cuál es la rutina culinaria pre guardia?</h1>
+        <br>
+        <button onclick="checkAnswer(this, false)">Milanesas napolitana</button>
+        <button onclick="checkAnswer(this, false)">Tarta de jamón y queso</button>
+        <button onclick="checkAnswer(this, true)">Rayar zanahoria y ponerla en el tapper rojo</button>
+      </div>
+
+      <div class="question">
+        <h1>8. ¿Cuál es la frase célebre?</h1>
+        <br>
+        <button onclick="checkAnswer(this, true)">Ponete Betacort</button>
+        <button onclick="checkAnswer(this, false)">¿Qué te sacaste?</button>
+        <button onclick="checkAnswer(this, false)">Apagá eso…</button>
+      </div>
+
+      <div class="question">
+        <h1>9. Viajero incansable, ¿cuántos km se banca?</h1>
+        <br>
+        <button onclick="checkAnswer(this, false)">3000 km</button>
+        <button onclick="checkAnswer(this, true)">2 km si no hay piquete</button>
+        <button onclick="checkAnswer(this, false)">300 km</button>
+      </div>
+
+      <div class="question">
+        <h1>10. ¿Por qué le decían Pan rallado?</h1>
+        <br>
+        <button onclick="checkAnswer(this, false)">Porque no tiraba el pan duro</button>
+        <button onclick="checkAnswer(this, false)">Porque era apto… sin tac</button>
+        <button onclick="checkAnswer(this, true)">Porque era el preferido</button>
+      </div>
+
+      <div id="result" class="hidden"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

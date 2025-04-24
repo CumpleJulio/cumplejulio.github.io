@@ -1,0 +1,127 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página con imagen del País Vasco */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background: url('cumplefondo.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Superposición semitransparente para mejorar la legibilidad */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Pantalla inicial */
+#start-screen {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 75%;
+    color: #fff;
+}
+
+#start-screen h1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#start-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#start-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #e60012;
+}
+
+/* Contenedor del quiz */
+.quiz-container {
+    display: none;
+    z-index: 2;
+    margin-bottom: 80%;
+    position: relative;
+    text-align: center;
+}
+
+/* Título del quiz */
+.quiz-container h1 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Preguntas */
+.question {
+    margin: 20px 0;
+}
+
+.question h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Botones de respuesta */
+.question button {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 70%;
+    max-width: 300px;
+}
+
+.question button:hover {
+    background-color: #fab1a0;
+    transform: scale(1.03);
+}
+
+.question button:active {
+    transform: scale(0.95);
+}
+
+button.correct {
+    background-color: #ffeaa7; /* doradito */
+    color: #2d3436;
+}
+
+button.incorrect {
+    background-color: #dfe6e9; /* gris claro */
+    color: #2d3436;
+}
+
+/* Resultado final */
+#result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
