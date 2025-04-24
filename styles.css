@@ -7,7 +7,7 @@
 
 /* Fondo de la página con imagen del País Vasco */
 body {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Arial', sans-serif;
     background: url('cumplefondo.jpeg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;

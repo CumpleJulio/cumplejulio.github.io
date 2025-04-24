@@ -12,7 +12,7 @@ let score = 0;
 startBtn.addEventListener('click', function() {
     startScreen.style.display = 'none';
     quizContainer.style.display = 'block';
-    quizTitle.textContent = '🎉 Preguntas sobre el/la cumpleañero/a 🎂';
+    quizTitle.textContent = '🎉Preguntas sobre el cumpleañero🎂';
     showQuestion(currentQuestion);
 });
 
